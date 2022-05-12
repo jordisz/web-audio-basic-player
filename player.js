@@ -52,3 +52,8 @@ pannerControl.addEventListener(
   },
   false
 );
+
+pannerControl.addEventListener("dblclick", function () {
+  this.value = 0;
+  panner.pan.value = 0;
+});

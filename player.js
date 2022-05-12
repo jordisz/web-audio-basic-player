@@ -32,3 +32,12 @@ audioElement.addEventListener(
   },
   false
 );
+
+const volumeControl = document.querySelector("#volume");
+volumeControl.addEventListener(
+  "input",
+  function () {
+    gainNode.gain.value = this.value;
+  },
+  false
+);
